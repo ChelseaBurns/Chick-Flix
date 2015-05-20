@@ -1,10 +1,15 @@
 {
-  "name": "pick-flix",
+  "name": "chick-flix",
   "version": "1.0.0",
   "description": "I will be developing a demo movie application.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "./node_modules/.bin/hs -a localhost -p $((RANDOM + 10000)) -o",
+    "build": "./build.sh",
+    "start": "npm run build; npm run server",
+    "deploy": "npm run build; ./deploy.sh",
+    "watch": "./watch.sh; npm run server"
   },
   "repository": {
     "type": "git",
@@ -16,4 +21,7 @@
     "url": "https://github.com/ChelseaBurns/Pick-Flix/issues"
   },
   "homepage": "https://github.com/ChelseaBurns/Pick-Flix#readme"
+  "devDependencies": {
+
+  }
 }
