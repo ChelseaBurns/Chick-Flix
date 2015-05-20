@@ -22,6 +22,12 @@
   },
   "homepage": "https://github.com/ChelseaBurns/Pick-Flix#readme"
   "devDependencies": {
+    "babel": "^5.3.1",
+    "bowcat": "0.0.4",
+    "http-server": "^0.8.0",
+    "jade": "jadejs/jade",
+    "node-sass": "^3.1.0",
+    "nodemon": "^1.3.7"
 
   }
 }
